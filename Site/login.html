@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title> login</title>
+</head>
+<body>
+
+
+<a href="file:///C:/Users/Administrador/Desktop/Site/tentativa.html"> voltar </a>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            outline: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #fffefe;
+        }
+
+        section#overlay {
+            position: fixed;
+            top: -100%;
+            left: 0;
+            right: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(-45deg, #0008ff, #0ffacf);
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.2s all linear;
+        }
+
+        section#overlay.active {
+            visibility: visible;
+            opacity: 1;
+            top: 0;
+        }
+
+        section#overlay aside {
+            background-color: #fff;
+            width: 350px;
+            padding: 20px;
+            border-radius: 16px;
+            position: relative;
+        }
+
+        section#overlay aside h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #181818;
+        }
+
+        section#overlay aside a.close {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            cursor: pointer;
+        }
+
+        section#overlay aside a.close svg {
+            width: 25px;
+            height: 25px;
+        }
+
+        section#overlay aside h4 {
+            font-size: 16px;
+            color: #282828;
+            margin-bottom: 8px;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: calc(100% - 20px);
+            padding: 8px 10px;
+            border: #cdcdcd solid 1px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        button[type=submit] {
+            border: none;
+            padding: 8px 20px;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 16px;
+            background-image: linear-gradient(45deg, #0008ff, #0ffacf);
+        }
+
+        
+
+        div.btnSec {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button[type=button]{
+            padding: 10px 20px;
+            background-image: linear-gradient(60deg, #0008ff, #0ffacf);
+            color: #fff;
+            border: none;
+            font-size: 16px;
+            border-radius: 10px;
+        }
+        a{
+            margin: 10px;
+        }
+    </style>
+    <script>
+        function toggleModal() {
+            document.getElementById("overlay").classList.toggle('active');
+        }
+    </script>
+<body>
+    <div class="btnSec">
+        <button type="button" onclick="toggleModal()"> Entre login, boi</button>        
+    </div>
+<section id="overlay">
+    <aside>
+        <h2>Login</h2>
+        <a onclick="togglemodal()" class="close">
+        <svg viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke:#a70eff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title/><g id="cross"><line class="cls-1" x1="7" x2="25" y1="7" y2="25"/><line class="cls-1" x1="7" x2="25" y1="25" y2="7"/></g></svg> 
+        </a>
+        <h4>Usuário:</h4>
+        <input type="text" />
+        <h4>Senha:</h4>
+        <input type="password" />
+        <button type="submit">Login</button>
+    </form>
+</aside>
+</section>
+</body>
+</html>
